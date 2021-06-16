@@ -42,10 +42,6 @@
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
     <br>
@@ -55,72 +51,81 @@
                 <fieldset>
                     <legend>Formulario de Registro</legend>
                     <form action="" method="POST">
-                        <ul style="list-style: none;">
-                            <li>
-                                <label for="nombre">Nombre: </label>
-                                <input type="text" name="nombre" id="nombre">
-                            </li>
+                        <div class="form-group">
+                            <label for="nombre">Nombre: </label>
+                            <input class="form-control" type="text" name="nombre" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="primerApellido">Primer Apellido:</label>
+                            <input class="form-control" type="text" name="primerApellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="segundoApellido">Segundo Apellido:</label>
+                            <input class="form-control" type="text" name="segundoApellido">
+                        </div>
 
+                        <div class="form-group">
+                            <label for=#>Tipo de modalidad: </label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="presencial" value="presencial">
+                                <label class="form-check-label" for="presencial">Presencial</label>
+                            </div>
 
-                            <li>
-                                <label for="primerApellido">Primer Apellido:</label>
-                                <input type="text" name="primerApellido">
-                            </li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="remoto" value="remoto">
+                                <label class="form-check-label" for="presencial">Remoto</label>
+                            </div>
 
-                            <li>
-                                <label for="segundoApellido">Segundo Apellido:</label>
-                                <input type="text" name="segundoApellido">
-                            </li>
-                            <li>
-                                <label for=#>Tipo de modalidad: </label>
-                                <input type="checkbox" id="presencial" value="presencial">
-                                <label
-                                for="presencial">Presencial</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="mixto" value="mixto">
+                                <label class="form-check-label" for="presencial">Mixto</label>
+                            </div>
 
-                                <input type="checkbox" id="remoto" value="remoto">
-                                <label
-                                for="presencial">Remoto</label>
+                        </div>
 
-                                <input type="checkbox" id="mixto" value="mixto">
-                                <label
-                                for="presencial">Mixto</label>
-                            </li>
+                        <div class="form-group">
+                            <label for="#">Sexo:</label>
 
-                            <li>
-                                <label for="#">Sexo:</label>
-                                <input type="radio" name="sexo" id="hombre">
-                                <label for="hombre">Hombre</label>
-                                <input type="radio" name="sexo" id="mujer">
-                                <label for="mujer">Mujer</label>
-                            </li>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexo" id="hombre">
+                                <label class="form-check-label" for="hombre">Hombre</label>
+                            </div>
 
-                            <li>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexo" id="mujer">
+                                <label class="form-check-label" for="mujer">Mujer</label>
+                            </div>
+
+                            <div class="form-group">
                                 <label for="curso">Curso:</label>
-                                <select name="curso" id="curso">
-                                <option value="0">Seleccione...</option>
-                                <option value="1">Creatividad y Diseño</option>
-                                <option value="2">Programación en Android</option>
-                                <option value="3">Base de Datos</option>
-                                <option value="4">Inteligencia Artificial</option>
-                                <option value="5">Finanzas</option>
-                                <option value="6">Estrategias de negociación</option>
-                            </li>
+                                <select class="form-control" name="curso" id="curso">
+                                    <option>Seleccione...</option>
+                                    <option>Creatividad y Diseño</option>
+                                    <option>Programación en Android</option>
+                                    <option>Base de Datos</option>
+                                    <option>Inteligencia Artificial</option>
+                                    <option>Finanzas</option>
+                                    <option>Estrategias de negociación</option>
+                                </select>
+                            </div>
+                        </div>
 
-                            <li>
-                                <label for="observaciones">Observaciones</label>
-                                <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10"></textarea>
-                            </li>
-
-                            <li>
-                                <input type="submit" value="Registrar" name="registrar" id="registrar">
-                                <input type="reset" value="Cancelar" name="reset" id="reset">
-                            </li>
-                        </ul>
-                    </form>
-                </fieldset>
-            </div>
+                        <div class="form-group">
+                            <label class="form-check-label" for="observaciones">Observaciones</label>
+                            <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60"
+                                rows="10"></textarea>
+                        </div>
+            <ul style="list-style: none;">
+                <li>
+                    <input class="btn btn-success" type="submit" value="Registrar" name="registrar" id="registrar">
+                    <input class="btn btn-danger" type="reset" value="Cancelar" name="reset" id="reset">
+                </li>
+            </ul>
+            </form>
+            </fieldset>
         </div>
     </div>
+
 
 </body>
 
